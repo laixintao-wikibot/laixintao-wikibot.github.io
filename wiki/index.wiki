@@ -14,5 +14,15 @@ _italic_ -- italic text
 
 }}}
 
-= Knowlage Base =
-    * [[Tasks]]
+= Tools =
+    * Vim
+    * Tmux
+    * Zsh
+    * Git
+
+= Programming Language =
+    * [[CSS]]
+    * Python
+
+= Quick Ref =
+    * [[Vim Ref]]
