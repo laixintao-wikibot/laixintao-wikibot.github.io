@@ -82,3 +82,6 @@ h3 a:link, h3 a:visited {
     text-decoration:none;
     border-bottom:none;
 }
+pre {
+    padding: 0 0 0 0
+  }
