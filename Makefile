@@ -1,9 +1,6 @@
-publish: clean
+publish: html
 	git add -A
-	git commit -m "Auto commit wiki files."
-	vim -m +VimwikiIndex +VimwikiAll2HTML +qa
-	git add -A
-	git commit -m "Compile to html"
+	git commit -m "Auto Compile to html and commit."
 	git pull --rebase
 	git push
 
