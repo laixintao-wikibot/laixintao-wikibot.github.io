@@ -22,12 +22,6 @@
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
 
             <!-- Be sure to leave the brand out there if you want it shown -->
             <a class="brand" href="index.html">史蒂芬的启示</a>
@@ -37,7 +31,7 @@
                 <!-- .nav, .navbar-search, .navbar-form, etc -->
                 <ul class="nav">
                     <li class="">
-                        <a href="https://www.kawabangga.com">卡瓦邦噶！</a>
+                        <a href="https://www.kawabangga.com">博客</a>
                     </li>
                     <li class="">
                         <a href="workspace/index.html">Workspace</a>
@@ -59,18 +53,306 @@
 
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span3 bs-docs-sidebar">
-            <ul id="sidebar_list" class="nav nav-list bs-docs-sidenav affix">
-            </ul>
-        </div>
+        <div class="span2"> </div>
 
         <div class="span7">
-            <!--Body content-->
             
 <div id="This is index page"><h1 id="This is index page">This is index page</h1></div>
 
+<div id="This is index page-这是标题2"><h2 id="这是标题2">这是标题2</h2></div>
 
 <p>
+快速移动光标
+查找
+替换
+大小写转换
+单词转换
+整页转换为大小写
+转换指定行
+拷贝, 删除与粘贴
+数字与命令
+插入与删除字符
+多文件编辑
+快速移动光标
+在 vi 中, 移动光标和编辑是两件事, 正因为区分开来, 所以可以很方便的进行光标定位和编辑. 因此能更快一点移动光标是很有用的.
+</p>
+
+<p>
+w(e)    移动光标到下一个单词 
+</p>
+
+<p>
+b     移动光标到上一个单词 
+</p>
+
+<p>
+0    移动光标到本行最开头 
+</p>
+
+<p>
+^    移动光标到本行最开头的字符处.
+</p>
+
+<p>
+$    移动光标到本行结尾处. 
+</p>
+
+<p>
+H    移动光标到屏幕的首行. 
+</p>
+
+<p>
+M    移动光标到屏幕的中间一行. 
+</p>
+
+<p>
+L    移动光标到屏幕的尾行. 
+</p>
+
+<p>
+gg    移动光标到文档首行. 
+</p>
+
+<p>
+G    移动光标到文档尾行. 
+</p>
+
+<p>
+c-f    (即 ctrl 键与 f 键一同按下) 本命令即 page down. 
+</p>
+
+<p>
+c-b    (即 ctrl 键与 b 键一同按下, 后同) 本命令即 page up. 
+</p>
+
+<p>
+''    此命令相当有用, 它移动光标到上一个标记处, 比如用 gd, * 等查找到某个单词后, 再输入此命令则回到上次停留的位置. 
+</p>
+
+<p>
+'.    此命令相当好使, 它移动光标到上一次的修改行. 
+</p>
+
+<p>
+`.    此命令相当强大, 它移动光标到上一次的修改点.
+查找
+/xxx(?xxx) 
+表示在整篇文档中搜索匹配xxx的字符串, / 表示向下查找, ? 表示向上查找.其中xxx可以是正规表达式, 查找到以后, 再输入 n 查找下一个匹配处, 输入 N 反方向查找.
+</p>
+
+<p>
+*(#)
+当光标停留在某个单词上时, 输入这条命令表示查找与该单词匹配的下(上)一个单词. 同样, 再输入 n 查找下一个匹配处, 输入 N 反方向查找.
+</p>
+
+<p>
+g*(g#)
+此命令与上条命令相似, 只不过它不完全匹配光标所在处的单词, 而是匹配包含该单词的所有字符串.
+</p>
+
+<p>
+gd
+本命令查找与光标所在单词相匹配的单词, 并将光标停留在文档的非注释段中第一次出现这个单词的地方.
+</p>
+
+<p>
+%
+本命令查找与光标所在处相匹配的反括号, 包括 () [] { }
+</p>
+
+<p>
+f(F)x
+本命令表示在光标所在行进行查找, 查找光标右(左)方第一个x字符.找到后输入";" 表示继续往下找;输入","表示反方向查找
+</p>
+
+<p>
+替换
+替换是 vi 的强项, 因为可以用正规表达式来匹配字符串
+</p>
+
+<p>
+:s/aa/bb/g 将光标所在行出现的所有包含 aa 的字符串中的 aa 替换为 bb
+:s/\&lt;aa\&gt;/bb/g 将光标所在行出现的所有 aa 替换为 bb, 仅替换 aa 这个单词
+:%s/aa/bb/g 将文档中出现的所有包含 aa 的字符串中的 aa 替换为 bb
+:12,23s/aa/bb/g 将从12行到23行中出现的所有包含 aa 的字符串中的 aa 替换为 bb
+:12,23s/^/#/ 将从12行到23行的行首加入 # 字符
+:%s= *$== 将所有行尾多余的空格删除
+:g/^\s*$/d 将所有不包含字符(空格也不包含)的空行删除.
+大小写转换
+gU
+gu
+大U意味着转为大写;小u意味着转为小写
+</p>
+
+<p>
+单词转换
+guw 、gue
+gUw、gUe
+想转换5个单词的命令如下：
+</p>
+
+<p>
+gu5w、gu5e
+gU5w、gU5e
+整页转换为大小写
+gggUG
+ggguG
+gg 光标到文件第一个字符
+gU 把选定范围全部大写
+G 到文件结束
+转换指定行
+1gU 从光标所在行 往下一行进行小写到大写的转换
+10gU 则进行11行小写到大写的转换
+gU0 从光标所在位置到行首，都变为大写
+gU$ 从光标所在位置到行尾，都变为大写
+gUG 从光标所在位置到文章最后一个字符，都变为大写
+gU1G 从光标所在位置到文章第一个字符，都变为大写
+拷贝, 删除与粘贴
+yw    表示拷贝从当前光标到光标所在单词结尾的内容
+</p>
+
+<p>
+dw    表示删除从当前光标到光标所在单词结尾的内容
+</p>
+
+<p>
+y0    表示拷贝从当前光标到光标所在行首的内容
+</p>
+
+<p>
+d0    表示删除从当前光标到光标所在行首的内容
+</p>
+
+<p>
+y$    表示拷贝从当前光标到光标所在行尾的内容
+</p>
+
+<p>
+d$    表示删除从当前光标到光标所在行尾的内容
+</p>
+
+<p>
+yfa    表示拷贝从当前光标到光标后面的第一个a字符之间的内容
+</p>
+
+<p>
+dfa    表示删除从当前光标到光标后面的第一个a字符之间的内容
+</p>
+
+<p>
+yy    表示拷贝光标所在行
+</p>
+
+<p>
+dd    表示删除光标所在行
+</p>
+
+<p>
+D    表示删除从当前光标到光标所在行尾的内容
+数字与命令
+在 vi 中数字与命令结合往往表示重复进行此命令, 若在扩展模式的开头出现则表示行号定位
+</p>
+
+<p>
+5fx    表示查找光标后第 5 个 x 字符.
+</p>
+
+<p>
+5w(e)    移动光标到下五个单词.
+</p>
+
+<p>
+5yy    表示拷贝光标以下 5 行.
+</p>
+
+<p>
+5dd    表示删除光标以下 5 行.
+</p>
+
+<p>
+y2fa    表示拷贝从当前光标到光标后面的第二个a字符之间的内容.
+</p>
+
+<p>
+:12,24y    表示拷贝第12行到第24行之间的内容.
+</p>
+
+<p>
+:12,y    表示拷贝第12行到光标所在行之间的内容.
+</p>
+
+<p>
+:,24y    表示拷贝光标所在行到第24行之间的内容. 删除类似.
+</p>
+
+<p>
+:co 12    把当前行 copy 到行 12 的地方。
+插入与删除字符
+:20,30 s/^/#/g    第20到30行用 # 注释掉。
+</p>
+
+<p>
+:20,30 s/^#//g    取消注释
+</p>
+
+<p>
+:4,10 s/<sup><small>[</small></sup>I ]\+//    去掉行首的空白字符
+</p>
+
+<p>
+:.,30 s/^/#/g    用 . 表示当前行。
+</p>
+
+<p>
+:20,30 s/^/ /g    在第20到30行的行首增加一个空格
+</p>
+
+<p>
+:%s/^/ /g    所有行首增加一个空格
+多文件编辑
+在一个 vim 程序中打开很多文件进行编辑是挺方便的
+</p>
+
+<p>
+:sp(:vsp) 文件名    
+vim 将分割出一个横(纵)向窗口, 并在该窗口中打开新文件.从 vim6.0 开始, 文件名可以是一个目录的名称, 这样, vim 会把该目录打开并显示文件列表, 在文件名上按回车则在本窗口打开该文件, 若输入 O 则在新窗口中打开该文件, 输入 ? 可以看到帮助信息.
+</p>
+
+<p>
+:e 文件名
+vim 将在原窗口中打开新的文件, 若旧文件编辑过, 会要求保存.
+</p>
+
+<p>
+c-w-w
+vim 分割了好几个窗口怎么办? 输入此命令可以将光标循环定位到各个窗口之中.
+</p>
+
+<p>
+:ls
+此命令查看本 vim 程序已经打开了多少个文件, 在屏幕的最下方会显示出如下数据:
+</p>
+
+<p>
+1   %a      "usevim.html"         行 162
+2   #       "xxxxxx.html"         行 0
+其中:
+</p>
+
+<p>
+1               表示打开的文件序号, 这个序号很有用处.
+%a              表示文件代号, % 表示当前编辑的文件,
+</p>
+<ol>
+<li>
+       表示上次编辑的文件
+
+</ol>
+<p>
+"usevim.html"   表示文件名.
+行 162          表示光标位置.
+:b 序号(代号)
+此命令将指定序号(代号)的文件在本窗口打开, 其中的序号(代号)就是用 :ls 命令看到的.
 test write
 another
 ok
@@ -98,26 +380,33 @@ set
 ssss
 </p>
 
+<div id="这是标题1 第二个"><h1 id="这是标题1 第二个">这是标题1 第二个</h1></div>
 
+<p>
+hello
+</p>
+
+        </div>
+        <div class="span3 bs-docs-sidebar">
+            <ul id="sidebar_list" class="nav nav-list bs-docs-sidenav affix">
+            </ul>
         </div>
   </div>
 </div>
 <a href="#" class="backtotop"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
-<!-- Footer
-    ================================================== -->
+
+
 <footer class="footer">
   <div class="container">
     <p>创作共同 (<a href="http://creativecommons.org/licenses/by/2.5/cn/">Creative Commons</a>) 版权协议</p>
   </div>
 </footer>
 
+
 <script>
     $('h1').each(function() {
         $(this).wrap('<section id="' + this.id + '"/>');
     });
-
-    $('h1').wrap('<div class="page-header" />');
-    $('h1').wrap('<div class="well well-small" />');
 
     $(document).ready(function() {
         var items = [];

@@ -22,12 +22,6 @@
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
 
             <!-- Be sure to leave the brand out there if you want it shown -->
             <a class="brand" href="%root_path%index.html">史蒂芬的启示</a>
@@ -37,7 +31,7 @@
                 <!-- .nav, .navbar-search, .navbar-form, etc -->
                 <ul class="nav">
                     <li class="">
-                        <a href="https://www.kawabangga.com">卡瓦邦噶！</a>
+                        <a href="https://www.kawabangga.com">博客</a>
                     </li>
                     <li class="">
                         <a href="%root_path%workspace/index.html">Workspace</a>
@@ -59,34 +53,31 @@
 
 <div class="container-fluid">
     <div class="row-fluid">
+        <div class="span2"> </div>
+
+        <div class="span7">
+            %content%
+        </div>
         <div class="span3 bs-docs-sidebar">
             <ul id="sidebar_list" class="nav nav-list bs-docs-sidenav affix">
             </ul>
         </div>
-
-        <div class="span7">
-            <!--Body content-->
-            %content%
-
-        </div>
   </div>
 </div>
 <a href="#" class="backtotop"><i class="fa fa-arrow-circle-up fa-4x"></i></a>
-<!-- Footer
-    ================================================== -->
+
+
 <footer class="footer">
   <div class="container">
     <p>创作共同 (<a href="http://creativecommons.org/licenses/by/2.5/cn/">Creative Commons</a>) 版权协议</p>
   </div>
 </footer>
 
+
 <script>
     $('h1').each(function() {
         $(this).wrap('<section id="' + this.id + '"/>');
     });
-
-    $('h1').wrap('<div class="page-header" />');
-    $('h1').wrap('<div class="well well-small" />');
 
     $(document).ready(function() {
         var items = [];

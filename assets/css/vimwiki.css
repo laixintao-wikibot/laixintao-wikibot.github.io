@@ -43,3 +43,42 @@ li.done4 {
     text-decoration:none;
     color: #0088cc;
 }
+
+h1 {
+    border-bottom:dashed 1px #779977;
+    font-size:2em;
+    color:#555;
+    font-size:2em;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family:"Berylium","Book Antiqua";
+}
+h2 {
+    color:#F06000;
+    font-size:1.3em;
+}
+h3 {
+    font-size:1.1em;
+}
+strong {
+    color:red;
+}
+a:link, a:visited {
+    color:#005599;
+    text-decoration:none;
+}
+h1 a:link, h1 a:visited {
+    color:#A77070;
+    text-decoration:none;
+    border-bottom:none;
+}
+h2 a:link, h2 a:visited {
+    color:#779977;
+    text-decoration:none;
+    border-bottom:none;
+}
+h3 a:link, h3 a:visited {
+    color:#555577;
+    text-decoration:none;
+    border-bottom:none;
+}
