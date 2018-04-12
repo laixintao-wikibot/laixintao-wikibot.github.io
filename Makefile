@@ -8,4 +8,9 @@ publish: clean
 	git push
 
 clean:
-	rm -rf html/*
+	rm -rf html
+
+html: clean
+	mkdir html
+	cp -r assets html/assets
+	vim -m +VimwikiIndex +VimwikiAll2HTML +qa

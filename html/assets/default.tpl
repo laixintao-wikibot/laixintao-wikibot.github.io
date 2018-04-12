@@ -4,18 +4,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/docs.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/monokai.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/vimwiki.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/font-awesome.css">
+<link type="text/css" rel="stylesheet" href="%root_path%assets/css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="%root_path%assets/css/bootstrap-responsive.css" />
+<link type="text/css" rel="stylesheet" href="%root_path%assets/css/docs.css" />
+<link type="text/css" rel="stylesheet" href="%root_path%assets/css/monokai.css" />
+<link type="text/css" rel="stylesheet" href="%root_path%assets/css/vimwiki.css" />
+<link type="text/css" rel="stylesheet" href="%root_path%assets/css/font-awesome.css">
 
-<script type="text/javascript" src="assets/js/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-<script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+<script type="text/javascript" src="%root_path%assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="%root_path%assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="%root_path%assets/js/highlight.pack.js"></script>
 
-<title>index</title>
+<title>%title%</title>
 
 </head>
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -37,19 +37,19 @@
                 <!-- .nav, .navbar-search, .navbar-form, etc -->
                 <ul class="nav">
                     <li class="">
-                        <a href="index.html">Index</a>
+                        <a href="%root_path%index.html">Index</a>
                     </li>
                     <li class="">
-                        <a href="workspace/index.html">Workspace</a>
+                        <a href="%root_path%workspace/index.html">Workspace</a>
                     </li>
                     <li class="">
-                        <a href="diary/diary.html">Diary</a>
+                        <a href="%root_path%diary/diary.html">Diary</a>
                     </li>
                     <li class="">
                         <a href="#">Calendar</a>
                     </li>
                     <li class="">
-                        <a href="todo.html">To Do</a>
+                        <a href="%root_path%todo.html">To Do</a>
                     </li>
                 </ul>
             </div>
@@ -66,38 +66,7 @@
 
         <div class="span7">
             <!--Body content-->
-            
-<div id="This is index page"><h1 id="This is index page">This is index page</h1></div>
-
-
-<p>
-test write
-another
-ok
-</p>
-
-
-<p>
-something up
-</p>
-
-<p>
-hello
-</p>
-
-
-<p>
-haha
-set
-</p>
-
-
-
-
-<p>
-ssss
-</p>
-
+            %content%
 
         </div>
   </div>
