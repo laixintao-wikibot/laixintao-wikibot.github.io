@@ -26,3 +26,4 @@ _italic_ -- italic text
 
 = Quick Ref =
     * [[Vim Ref]]
+    * [[Alias]]

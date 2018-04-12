@@ -14,7 +14,6 @@
 <script type="text/javascript" src="%root_path%assets/js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="%root_path%assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="%root_path%assets/js/highlight.pack.js"></script>
-
 <title>%title%</title>
 
 </head>
@@ -23,27 +22,15 @@
     <div class="navbar-inner">
         <div class="container">
 
-            <!-- Be sure to leave the brand out there if you want it shown -->
             <a class="brand" href="%root_path%index.html">史蒂芬的启示</a>
 
-            <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
                 <!-- .nav, .navbar-search, .navbar-form, etc -->
                 <ul class="nav">
                     <li class="">
-                        <a href="https://www.kawabangga.com">博客</a>
                     </li>
                     <li class="">
-                        <a href="%root_path%workspace/index.html">Workspace</a>
-                    </li>
-                    <li class="">
-                        <a href="%root_path%diary/diary.html">Diary</a>
-                    </li>
-                    <li class="">
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li class="">
-                        <a href="%root_path%todo.html">To Do</a>
+                        <a href="#">当前页面:%title%</a>
                     </li>
                 </ul>
             </div>
