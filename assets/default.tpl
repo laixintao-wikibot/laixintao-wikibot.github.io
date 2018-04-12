@@ -30,14 +30,14 @@
             </a>
 
             <!-- Be sure to leave the brand out there if you want it shown -->
-            <a class="brand" href="http://code.google.com/p/vimwiki/">Vimwiki</a>
+            <a class="brand" href="%root_path%index.html">史蒂芬的启示</a>
 
             <!-- Everything you want hidden at 940px or less, place within here -->
             <div class="nav-collapse collapse">
                 <!-- .nav, .navbar-search, .navbar-form, etc -->
                 <ul class="nav">
                     <li class="">
-                        <a href="%root_path%index.html">Index</a>
+                        <a href="https://www.kawabangga.com">卡瓦邦噶！</a>
                     </li>
                     <li class="">
                         <a href="%root_path%workspace/index.html">Workspace</a>
@@ -76,13 +76,10 @@
     ================================================== -->
 <footer class="footer">
   <div class="container">
-    <p><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
-    <p><a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a> licensed under <a href="http://scripts.sil.org/OFL">SIL Open Font License</a>.</p>
-    <p><a href="http://softwaremaniacs.org/soft/highlight/en/">highlight.js</a> licensed under <a href="http://opensource.org/licenses/BSD-3-Clause">Modified BSD License</a>.</p>
-    <ul class="footer-links">
-    </ul>
+    <p>创作共同 (<a href="http://creativecommons.org/licenses/by/2.5/cn/">Creative Commons</a>) 版权协议</p>
   </div>
 </footer>
+
 <script>
     $('h1').each(function() {
         $(this).wrap('<section id="' + this.id + '"/>');
