@@ -1,20 +1,4 @@
-= Vimwiki Syntax =
-
-{{{
-= Header1 =
-== Header2 ==
-=== Header3 ===
-
-
-*bold* -- bold text
-_italic_ -- italic text
-
-[[wiki link]] -- wiki link
-[[wiki link|description]] -- wiki link with description
-
-}}}
-
-= Tools =
+= Dev Tools =
     * Vim
     * Tmux
     * Zsh
@@ -27,3 +11,12 @@ _italic_ -- italic text
 = Quick Ref =
     * [[Vim Ref]]
     * [[Alias]]
+
+= Mark =
+    * Static Site Generator: https://www.staticgen.com/
+
+= About =
+
+个人 Wiki 页面，可能比较杂乱。评论请至博客或通过邮件联系我。
+    * Blog 卡瓦邦噶! https://www.kawabangga.com
+    * Github: https://github.com/laixintao
