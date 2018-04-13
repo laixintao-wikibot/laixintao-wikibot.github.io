@@ -15,8 +15,19 @@
 = Mark =
     * Static Site Generator: https://www.staticgen.com/
 
+= Timeseries database =
+    * https://github.com/gnocchixyz/gnocchi
+    * https://github.com/graphite-project/carbon
+= Database =
+    * [[MySQL]]
 = About =
+    * [[Memos]]
+    * [[Notes]]
+    * 
 
 个人 Wiki 页面，可能比较杂乱。评论请至博客或通过邮件联系我。
     * Blog 卡瓦邦噶! https://www.kawabangga.com
     * Github: https://github.com/laixintao
+
+组织方式：
+不定期发布；所有页面平级（暂时这样）。首页能直接 index 到各下面的页面，页面内同一主题通过 <h1> tag 分离。
