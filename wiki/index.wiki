@@ -13,14 +13,17 @@
     * [[Alias]]
 
 = Mark =
-    * Static Site Generator: https://www.staticgen.com/
+    * Static Site Generator: https://www.staticgen.com
 
 = Timeseries database =
-    * https://github.com/gnocchixyz/gnocchi
-    * https://github.com/graphite-project/carbon
+    * [[https://github.com/gnocchixyz/gnocchi|gnocchi]]
+    * [[https://github.com/graphite-project/carbon|Carbon]]
 
 = Database =
     * [[MySQL]]
+    * [[Postgres]]
+    * [[Mongo]]
+    * [[Redis]]
 
 = Games =
     * [[血源诅咒]]
