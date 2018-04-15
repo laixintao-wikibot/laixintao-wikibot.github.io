@@ -1,0 +1,14 @@
+= MySQL 相关资料 =
+
+== 入门 ==
+
+对初学者来说最重要的就是熟悉官网文档，了解文档结构，尽快适应从文档中找答案。忘记一些语句是非常常见的事情，这种情况应该去文档索引中查（而不是用Google）。文档是第一手信息，而网上的教程则可能过时，保持从文档中查阅的习惯可以躲开很多因为过时的文章留下的坑。
+
+    * 官方手册(最全最权威的命令解释，不熟悉的命令要首先去这里查找，而不是 w3school 之类的）：https://dev.mysql.com/doc/refman/5.7/en/sql-syntax.html
+    * 《MySQL排错指南》是2015年夏天引入中国的书籍，这本书可以说是DBA速成指南，介绍的内容其实比较简单，但是也非常实用，对于DBA这个讲究经验的工种，这本书就是传授经验的，可能对有较多工作经验的DBA来说，这本书基本没有什么用，但是，对于刚入职场的新人，或学校里的学生，这本书会有较大的帮助，非常推荐。(http://mingxinglai.com/cn/2015/12/material-of-mysql/)
+    * 《SQL Cookbook》http://cenalulu.github.io/mysql/mysql-book-for-newbie/ 推荐(Facebook DBA)
+    * [[SQLZOO]](http://zh.sqlzoo.net/wiki/SELECT_basics/zh) 在线入门和练习
+
+== 精通 ==
+
+WIP

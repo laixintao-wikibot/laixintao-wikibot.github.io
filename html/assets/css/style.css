@@ -1,0 +1,26 @@
+body {
+  background-color: #77C4D3;
+}
+div.content {
+    max-width: 600px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 80px;
+    background-color: #fff;
+    box-shadow: 0 0 0 0, 0 6px 12px rgba(34,34,34,0.1);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+h1 {
+  font: bold 2em/1em "Times New Roman", "MS Serif", "New York", serif;
+  margin: 0;
+  padding: 3px;
+  color: #333745;
+  border-bottom: solid #DAEDE2 medium;
+  width: 600px;
+  text-align: center;
+}
