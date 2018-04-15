@@ -6,7 +6,7 @@
 
 = Programming Language =
     * [[CSS]]
-    * Python
+    * [[Python]]
 
 = Quick Ref =
     * [[Vim Ref]]
@@ -20,6 +20,9 @@
     * https://github.com/graphite-project/carbon
 = Database =
     * [[MySQL]]
+= Games =
+    * [[血源诅咒]]
+    * 
 = About =
     * [[Memos]]
     * [[Notes]]
