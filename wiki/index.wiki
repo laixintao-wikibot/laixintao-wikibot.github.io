@@ -18,15 +18,16 @@
 = Timeseries database =
     * https://github.com/gnocchixyz/gnocchi
     * https://github.com/graphite-project/carbon
+
 = Database =
     * [[MySQL]]
+
 = Games =
     * [[血源诅咒]]
-    * 
+
 = About =
     * [[Memos]]
     * [[Notes]]
-    * 
 
 个人 Wiki 页面，可能比较杂乱。评论请至博客或通过邮件联系我。
     * Blog 卡瓦邦噶! https://www.kawabangga.com
