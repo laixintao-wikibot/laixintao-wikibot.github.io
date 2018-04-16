@@ -50,7 +50,69 @@ Static Site Generator: <a href="https:&#47;&#47;www.staticgen.com">https://www.s
 
 </ul>
 
-<div id="Timeseries database"><h1 id="Timeseries database">Timeseries database</h1></div>
+<div id="Timeseries Database"><h1 id="Timeseries Database">Timeseries Database</h1></div>
+
+<p>
+时间序列数据库的特点：
+</p>
+<ol>
+<li>
+只读或只写(监控与被监控）
+
+<li>
+写大于读
+
+<li>
+顺序写
+
+<li>
+很少更新
+
+<li>
+区块（bulk）删除
+
+<li>
+读取某个时间区内的大量数据
+
+<li>
+数据结构简单，数据量大
+
+</ol>
+
+<p>
+时间序列数据可以分成两部分，序列和数据点。 序列就是标识符，比如华东区机器001的CPU使用率。 数据点是时间戳和数值构成的数组。
+</p>
+
+<p>
+数据点可以：
+</p>
+<ol>
+<li>
+(存行)一个数组的点 [{t: 2017-09-03-21:24:44, v: 0.1002}, {t: 2017-09-03-21:24:45, v: 0.1012}]
+
+<li>
+(存列)或者存两个数组
+
+</ol>
+
+<p>
+选型需要考虑的因素：
+</p>
+<ol>
+<li>
+性能
+
+<li>
+存储引擎
+
+<li>
+集群扩展能力（Fault-tolerant）
+
+<li>
+API 以及相关生态
+
+</ol>
+
 <ul>
 <li>
 <a href="https:&#47;&#47;github.com&#47;gnocchixyz&#47;gnocchi">gnocchi</a>
@@ -58,8 +120,25 @@ Static Site Generator: <a href="https:&#47;&#47;www.staticgen.com">https://www.s
 <li>
 <a href="https:&#47;&#47;github.com&#47;graphite-project&#47;carbon">Carbon</a>
 
+<li>
+RRDTool (自带画图功能)
+
+<li>
+<a href="InfluxDB.html">InfluxDB</a>
+
+<li>
+<a href="Graphite.html">Graphite</a> (水平扩展难？)
+
 </ul>
 
+<p>
+2016年2月趋势：
+<img src="http://liubin.org/images/2016/02/tsdb-series/tsdb-ranking.png" />
+</p>
+
+<p>
+<a href="https:&#47;&#47;db-engines.com&#47;en&#47;ranking&#47;time+series+dbms">最新排名</a>
+</p>
 <div id="Database"><h1 id="Database">Database</h1></div>
 <ul>
 <li>

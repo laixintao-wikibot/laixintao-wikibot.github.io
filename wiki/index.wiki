@@ -15,10 +15,39 @@
 = Mark =
     * Static Site Generator: https://www.staticgen.com
 
-= Timeseries database =
+= Timeseries Database =
+
+时间序列数据库的特点：
+1. 只读或只写(监控与被监控）
+2. 写大于读
+3. 顺序写
+4. 很少更新
+5. 区块（bulk）删除
+6. 读取某个时间区内的大量数据
+7. 数据结构简单，数据量大
+
+时间序列数据可以分成两部分，序列和数据点。 序列就是标识符，比如华东区机器001的CPU使用率。 数据点是时间戳和数值构成的数组。
+
+数据点可以：
+1. (存行)一个数组的点 [{t: 2017-09-03-21:24:44, v: 0.1002}, {t: 2017-09-03-21:24:45, v: 0.1012}]
+2. (存列)或者存两个数组
+
+选型需要考虑的因素：
+1. 性能
+2. 存储引擎
+3. 集群扩展能力（Fault-tolerant）
+4. API 以及相关生态
+
     * [[https://github.com/gnocchixyz/gnocchi|gnocchi]]
     * [[https://github.com/graphite-project/carbon|Carbon]]
+    * RRDTool (自带画图功能)
+    * [[InfluxDB]]
+    * [[Graphite]] (水平扩展难？)
 
+2016年2月趋势：
+{{http://liubin.org/images/2016/02/tsdb-series/tsdb-ranking.png}}
+
+[[https://db-engines.com/en/ranking/time+series+dbms|最新排名]]
 = Database =
     * [[MySQL]]
     * [[Postgres]]

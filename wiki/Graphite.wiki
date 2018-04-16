@@ -1,0 +1,13 @@
+= Graphite =
+
+Graphite 做两件事：
+
+1. 存储时序列数据（严格按照时间排列的数据）
+2. 按需渲染数据的图标
+
+Graphite 不做的事：
+* 收集数据（他们推荐使用 [[https://graphite.readthedocs.io/en/latest/tools.html|其他工具]] 来做
+
+
+3. [[https://zhuanlan.zhihu.com/p/29367404|时间序列数据库漫谈]]([[https://medium.com/@at15/introduction-to-time-series-database-df5e064e4ac3|英文]])
+4. [[http://liubin.org/blog/2016/02/18/tsdb-intro/|时序列数据库武斗大会之什么是TSDB]]
