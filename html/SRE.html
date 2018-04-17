@@ -8,9 +8,13 @@
     <div class="content">
     
 
+<div id="《Google SRE》阅读"><h1 id="《Google SRE》阅读">《Google SRE》阅读</h1></div>
+<blockquote>
+东西早晚要坏的，这就是生活。
+</blockquote>
 
 
-<div id="监控系统"><h2 id="监控系统">监控系统</h2></div>
+<div id="《Google SRE》阅读-监控系统"><h2 id="监控系统">监控系统</h2></div>
 
 <ul>
 <li>
@@ -21,17 +25,17 @@
 
 </ul>
 
-<div id="监控系统-指标的收集"><h3 id="指标的收集">指标的收集</h3></div>
+<div id="《Google SRE》阅读-监控系统-指标的收集"><h3 id="指标的收集">指标的收集</h3></div>
 
 <p>
-Borgmon 在每个集群有一个实例，然后在全球有两个 <span id="监控系统-指标的收集-对等"></span><strong id="对等">对等</strong> 实例，汇集每个集群的信息。（两个是为了防止单点故障）
+Borgmon 在每个集群有一个实例，然后在全球有两个 <span id="《Google SRE》阅读-监控系统-指标的收集-对等"></span><strong id="对等">对等</strong> 实例，汇集每个集群的信息。（两个是为了防止单点故障）
 </p>
 
 <p>
 Gogole 使用 varz 进行指标收集，依赖 HTTP 协议。另一种方案使用 SNMP 协议收集。
 </p>
 
-<div id="监控系统-时间序列存储"><h3 id="时间序列存储">时间序列存储</h3></div>
+<div id="《Google SRE》阅读-监控系统-时间序列存储"><h3 id="时间序列存储">时间序列存储</h3></div>
 
 <p>
 数据放在固定大小的内存块中，定期写入硬盘。
@@ -47,7 +51,7 @@ Gogole 使用 varz 进行指标收集，依赖 HTTP 协议。另一种方案使�
 </p>
 
 
-<div id="监控系统-指标的汇总"><h3 id="指标的汇总">指标的汇总</h3></div>
+<div id="《Google SRE》阅读-监控系统-指标的汇总"><h3 id="指标的汇总">指标的汇总</h3></div>
 
 <ul>
 <li>
@@ -62,19 +66,19 @@ counter 计数器： 永远上涨，里程表
 推荐多使用 counter 因为它不会再两次测量之间丢失信息。
 </p>
 
-<div id="监控系统-报警规则"><h3 id="报警规则">报警规则</h3></div>
+<div id="《Google SRE》阅读-监控系统-报警规则"><h3 id="报警规则">报警规则</h3></div>
 
 <p>
 报警结果为 true/false ，并且总是在反复变动。所以报警应该设置一个最小持续时间，例如两个计算周期的报警结果保持为 true 才发送报警。Google 的报警采用了单独的一套系统接到 Borgmon 上面工作。
 </p>
 
-<div id="监控系统-黑盒监控"><h3 id="黑盒监控">黑盒监控</h3></div>
+<div id="《Google SRE》阅读-监控系统-黑盒监控"><h3 id="黑盒监控">黑盒监控</h3></div>
 
 <p>
 白盒监控耦合了应用程序的指标。但是可能无法得知失败请求的情况（用户看到的最终结果）。使用 prober 探针程序做黑盒监控。
 </p>
 
-<div id="监控系统-总结"><h3 id="总结">总结</h3></div>
+<div id="《Google SRE》阅读-监控系统-总结"><h3 id="总结">总结</h3></div>
 
 <ul>
 <li>
@@ -82,6 +86,15 @@ counter 计数器： 永远上涨，里程表
 
 <li>
 松耦合，独立于监控系统规则
+
+</ul>
+
+
+<div id="《Google SRE》阅读-Memos"><h2 id="Memos">Memos</h2></div>
+
+<ul>
+<li>
+值得警惕的是，理解一个系统应该如何工作并不能使人成为专家。只能靠调查系统为何不正常工作才行。 ——Brian Redman
 
 </ul>
 
