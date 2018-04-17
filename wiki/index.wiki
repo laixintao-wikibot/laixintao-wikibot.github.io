@@ -7,6 +7,9 @@
 = Programming Language =
     * [[CSS]]
     * [[Python]]
+    * [[Lisp]]
+    * [[Go]]
+    * [[Lua]]
 
 = Quick Ref =
     * [[Vim Ref]]
@@ -14,6 +17,7 @@
 
 = Mark =
     * Static Site Generator: https://www.staticgen.com
+    * 介绍了一些有意思的开源项目: http://www.aosabook.org/en/index.htm
 
 = Timeseries Database =
 
