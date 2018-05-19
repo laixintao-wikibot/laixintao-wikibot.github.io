@@ -1,0 +1,15 @@
+== 如何修改截图位置 ==
+
+打开终端（Terminal）并输入如下命令：
+
+defaults write com.apple.screencapture location /path/
+
+/path/ 即你想要设置的保存路径，比如将截图文件存储在用户目录的图片（Pictures）文件夹，命令则为：
+
+defaults write com.apple.screencapture location ~/Pictures/
+
+接下来，为了使得修改生效，输入下面这条命令：
+
+killall SystemUIServer
+
+当然，如果你习惯将截图保存在桌面的话，/path/ 对应的路径为 ~/Desktop/。

@@ -58,8 +58,16 @@
     * [[Mongo]]
     * [[Redis]]
 
+= 分布式 =
+    * [[Paxos]]
+   
+= OS =
+    * [[OS X]]
+
 = Engineering =
     * [[SRE]]
+    * [[DDD]]
+ 
 = Games =
     * [[血源诅咒]]
     * [[战神]]

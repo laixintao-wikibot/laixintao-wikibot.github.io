@@ -1,2 +1,7 @@
 = GIL =
     1. GIL 是什么？ https://realpython.com/python-gil/
+    
+
+= Django =
+
+1. Instagram 与 Django 的故事： https://www.youtube.com/watch?v=maw4EnFLhIU

@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="Stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>OS X</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div class="content">
+    
+<div id="如何修改截图位置"><h2 id="如何修改截图位置">如何修改截图位置</h2></div>
+
+<p>
+打开终端（Terminal）并输入如下命令：
+</p>
+
+<p>
+defaults write com.apple.screencapture location /path/
+</p>
+
+<p>
+/path/ 即你想要设置的保存路径，比如将截图文件存储在用户目录的图片（Pictures）文件夹，命令则为：
+</p>
+
+<p>
+defaults write com.apple.screencapture location ~/Pictures/
+</p>
+
+<p>
+接下来，为了使得修改生效，输入下面这条命令：
+</p>
+
+<p>
+killall SystemUIServer
+</p>
+
+<p>
+当然，如果你习惯将截图保存在桌面的话，/path/ 对应的路径为 ~/Desktop/。
+</p>
+
+    </div>
+</body>
+</html>
